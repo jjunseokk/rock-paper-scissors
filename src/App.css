@@ -1,38 +1,184 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+.container{
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-self: center;
   align-items: center;
+  background-color: lightblue;
+}
+
+.wrap{
+  width: 50%;
+  display: flex;
+
+  margin-top: 80px;
+}
+.box{
+  width: 50%;
+  border: 1px solid black;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  flex-direction: column;
+}
+.box h1{
+  text-align: center;
+}
+.box img{
+  width: 100%;
+}
+.box p{
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.btn-style button{
+  margin: 10px 0px;
+  width: 50px;
+  height: 50px;
+}
+.Win{
+  border: 10px solid green;
+  color : green;
+  transition: 1s;
+}
+.Lose{
+  border: 10px solid red;
+  color : red;
+  transition: 1s;
+}
+.Tie{
+  border: 10px solid purple;
+  color : purple;
+  transition: 1s;
+}
+
+.backGround{
+  width: 100vw;
+  height: 100vh;
+  background : linear-gradient(45deg, blue,rgb(244, 159, 159), rgb(241, 255, 113));
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.backGround h1{
+  font-family: 'Sigmar One', cursive;
+  font-size: 50px;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+.backGround img{
+  width: 700px;
+  height: 500px;
+}
+
+.playBtn{
+  width: 150px;
+  height: 50px;
+  border: 3px solid white;
+  border-radius: 20px;
+  background: none;
+  margin-top: 50px;
+  cursor: pointer;
+
   color: white;
+  font-size: 20px;
+  
+  position: relative;
+  z-index: 1;
+}
+.playBtn:hover{
+  color: black;
+  background-color: white;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.playBtn:after {
+  content: "";
+  border-radius: 20px;
+  width: 0%;
+  height: 100%;
+  top: 0;
+  position: absolute;
+  left: 0;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  background: #ffffff;
+}
+.playBtn:hover:after {
+  width: 100%;
+  z-index: -1;
 }
 
-.App-link {
-  color: #61dafb;
+.active{
+  transform: scale(0);
+  transition: 1s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width:425px) {
+  .wrap{
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+  .box h1{
+    font-size: 15px;
+  }
+  .box img{
+    width: 40%;
+  }
+  .box p{
+    font-size: 15px;
+  }
+  .backGround h1{
+    font-family: 'Sigmar One', cursive;
+    font-size: 20px;
+  }
+  .backGround img{
+    width: 200px;
+    height: 150px;
+  }
+  .playBtn{
+    width: 100px;
+    height: 50px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width:426px) and (max-width:769px) {
+  .wrap{
+    width: 100%;
+  }
+  .box h1{
+    font-size: 25px;
+  }
+  .box img{
+    width: 40%;
+  }
+  .box p{
+    font-size: 15px;
+  }
+  .backGround h1{
+    font-family: 'Sigmar One', cursive;
+    font-size: 30px;
+  }
+  .backGround img{
+    width: 400px;
+    height: 250px;
+  }
+  .playBtn{
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
   }
 }

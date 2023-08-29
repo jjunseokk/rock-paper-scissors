@@ -22,8 +22,14 @@ https://jjunseokk.github.io/rock-paper-scissors/
 <br/>
 
 # 👾 서비스 소개
-### 컴퓨터와 가위바위보 게임! 시간나는 사람들 다모여라~
+### 컴퓨터와 가위바위보 게임! 시간나는 사람들 다모여라~ 
 
+<br/>
+<br/>
+
+<img width="729" alt="스크린샷 2023-08-29 오후 5 25 24" src="https://github.com/jjunseokk/rock-paper-scissors/assets/87737169/b35b6762-b34d-47f2-a971-acaeee054eb9">
+
+간단하게 즐기는 가위바위보 게임 심심할 때 언제나 즐겨보세요.
 
 <br/>
 
